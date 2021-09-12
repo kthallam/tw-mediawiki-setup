@@ -59,7 +59,7 @@ resource "aws_route_table" "public-rt" {
 
 # Create Route  for Private Subnets
 resource "aws_route_table" "private-rt" {
-  vpc_id = aws_vpc.mediawiki.i
+  vpc_id = aws_vpc.mediawiki.id
 
   tags = {
     Name = "${var.PROJECT_NAME}-Private-RT"
